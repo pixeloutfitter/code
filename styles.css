@@ -1,8 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  max-width: 1200px; /* Set a fixed width for your main content container */
+}
   
   .slider-container {
     width: 100%;
@@ -116,7 +119,7 @@ body {
     background-color: #0056b3;
 }
 
-@media screen and (max-width: 868px) {
+@media (max-width: 767px) {
     .section1 {
         flex-direction: column;
         align-items: center;
