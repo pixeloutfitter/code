@@ -1,0 +1,110 @@
+/* Base Styles (for screens larger than 768px) */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),;
+       
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation-name: imgslider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes imgslider {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes imgslider {
+    0% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+            url("1\ \(1\).jpeg");
+    }
+    25% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+            url("1\ \(2\).jpeg");
+    }
+    50% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+            url("1\ \(3\).jpeg");
+    }
+    75% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+            url("2\ \(1\).jpeg");
+    }
+    100% {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+            url("2\ \(2\).jpeg");
+    }
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-header {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-header:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    color: white;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .text-box h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+    
+    .text-box p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
