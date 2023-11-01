@@ -9,6 +9,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>#preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff; /* Background color for the preloader overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Ensure the preloader is above all other elements */
+    }
+    
+    #status img {
+        max-width: 100%;
+        height: auto;
+    }
+    </style>
   </head>
 </head>
 <body>
@@ -62,7 +81,11 @@
         
 <section class="header">
 
-    
+    <div id="preloader">
+        <div id="status">
+            <img src="ezgif.com-video-to-gif.gif" alt="Preloader">
+        </div>
+    </div>
 
 <div class="text-box">
 
@@ -362,5 +385,16 @@
   </div>
 </footer>
 
+    
+<script>
+    // JavaScript to hide the preloader when the page content is loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        var preloader = document.getElementById("preloader");
+        preloader.style.display = "none";
+
+        var mainContent = document.getElementById("main-content");
+        mainContent.style.display = "block"; // Display the main content
+    });
+</script>
 </body>
 </html>
