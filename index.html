@@ -3,398 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAINBOW-1</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <style>#preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff; /* Background color for the preloader overlay */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999; /* Ensure the preloader is above all other elements */
-    }
+    <title>STELLXR</title>
+    <link rel="icon" type="image/png" href="logoreal.png">
     
-    #status img {
-        max-width: 100%;
-        height: auto;
-    }
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+        /* Styling for the parallax container with the class "parallax1-container" */
+        .parallax1-container {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2017/09/30/03/01/fantasy-2801105_1280.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Styling for the black shade overlay */
+        .parallax1-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Black with 50% transparency */
+        }
+
+        /* Styling for the text on top of the parallax */
+        .parallax-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Styling for the logo image to make it responsive */
+        .parallax-text img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Specific styles for the second parallax section */
+        .parallax2-container {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_1280.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax2-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8); /* Black with 60% transparency */
+        }
+
+        .parallax2-text {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 20px; /* Align to the left */
+            transform: translateY(-50%); /* Center text vertically */
+            color: #fff; /* Change text color for the second parallax */
+            font-size: 20px; /* Change font size for the second parallax */
+            max-width: 80%; /* Limit the maximum width of the text */
+        }
+
+        .parallax2-text p {
+            text-align: left; /* Align the text to the left */
+        }
+
+        .parallax2-image {
+            position: absolute;
+            right: 20px; /* Align to the right */
+            max-width: 40%; /* Limit the maximum width of the image */
+            height: auto;
+            top:140px; /* Move it up a bit on mobile devices */
+        }
+
+        @media (max-width: 768px) {
+            /* Adjust the position of the image on mobile view */
+            .parallax2-image {
+                top: -.1%; /* Move it up a bit on mobile devices */
+            }
+        }
+
+
+body{background-color: #000000;}
+
+
+        .parallax3-container {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax3-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8); /* Black with 60% transparency */
+        }
+
+        .parallax3-text {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 20px; /* Align to the left */
+            transform: translateY(-50%); /* Center text vertically */
+            color: #fff; /* Change text color for the second parallax */
+            font-size: 20px; /* Change font size for the second parallax */
+            max-width: 80%; /* Limit the maximum width of the text */
+        }
+
+        .parallax3-text p {
+            text-align: left; /* Align the text to the left */
+        }
+
+        .parallax3-image {
+    position: absolute;
+    right: 20px; /* Align to the right */
+    max-width: 30%; /* Limit the maximum width of the image to 30% */
+    top: 140px; /* Move it up a bit on mobile devices */
+}
+
+
+        @media (max-width: 768px) {
+            /* Adjust the position of the image on mobile view */
+            .parallax3-image {
+                top: -.1%; /* Move it up a bit on mobile devices */
+            }
+        }
+
+
+
+
+
+
+
+
+
+        .container.about-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* IE8 support */
+}
+
+h1.heading {
+    text-align: center;
+}
+
+p.text {
+    text-align: center;
+}
+
+
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Background color for the preloader overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the preloader is above all other elements */
+}
+
+#status img {
+    max-width: 100%;
+    height: auto;
+}
+
     </style>
-  </head>
 </head>
 <body>
-
-    <div class="top-bar bg-dark text-white" style="  background: linear-gradient(to right, 
-    red, 
-    orange, 
-    yellow, 
-    green, 
-    blue, 
-    indigo, 
-    violet
-  );">
-        <div class="container d-flex justify-content-end align-items-center">
-          <div class="contact-info me-4">
-            <span class="me-2"><i class="fas fa-envelope"></i> rainbowedupark@gmail.com</span>
-            <span>         &nbsp;<i class="fas fa-phone"></i> +91  94467 77181</span>
-          </div>
-        </div>
-      </div>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="1468f371-d37d-40cc-acf8-e649ea3d434b-removebg-preview.png" alt="Logo" style="height: 40px; width: auto;">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="abt.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="facility.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="c.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="express.html">Express60</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-<section class="header">
 
     <div id="preloader">
         <div id="status">
             <img src="ezgif.com-video-to-gif.gif" alt="Preloader">
         </div>
     </div>
-
-<div class="text-box">
-
-
-           <h1>Raibow Edu Park</h1>
-           <p style="text-align:center;">
-            Rainbow Tuition Center, nestled in the vibrant locales of Iringannur and Peringathur, is a beacon of educational excellence. Our dedicated team of educators fosters a nurturing environment where students thrive academically. With a rainbow of subjects and personalized guidance, we illuminate the path to success for our students.</p>
-            <a href="abt.html" class="btn-header">Visit us to know more</a>
-</div>
-
-</section>
-<div class="marquee-container">
-  <div class="marquee-content">
-     Rainbow..........
-  </div>
-</div>
-<br>
-<div class="container1">
-  <div class="box1 red">
-      <h1>Quality Education</h1>
-      <p>We provide high quality education with quality contents and quality classes our classrooms are also very high quality</p>
-      <i class="fas fa-circle"><img src="scholarship.png" height="50px"></i>
-  </div>
-  <div class="box1 orange">
-      <h1>Highest Mark Assured</h1>
-      <p>Dont worry with our powerfull teaching methods we assure that your child will always be the top in studyies</p>
-      <i class="fas fa-circle"><img src="anniversary_6198562.png" height="50px"></i>
-  </div>
-  <div class="box1 green">
-      <h1>Supportive Teachers</h1>
-      <p>Our teachers are very friendly and suppotive so that the student feels like a friend taking the class and understands everything</p>
-      <i class="fas fa-circle"><img src="education.png" height="50px"> </i>
-  </div>
-</div>
-<br><br><br>
-<section class="container mt-5" >
-  <div class="row">
-      <div class="col-md-6">
-          <img src="abt img.jpeg" alt="Company Image" class="img-fluid mx--5"> <!-- Added mx-3 for horizontal margin -->
-      </div>
-      <div class="col-md-6">
-          <h1>
-       
-            
-            About Us</h1>
-          <p>
-            Welcome to Rainbow Tuition Center, your trusted partner in academic excellence. We are a leading institution dedicated to nurturing young minds and helping students achieve their educational goals. With a strong focus on quality education, we cater to a diverse range of students, including those in Std 8, 9, 10, +1, +2, as well as B.Com and B.A students.
-          </p>
-          <a href="abt.html" class="btn btn-primary">Learn More</a>
-      </div>
-  </div>
-</section>
-<br><br><br><br><div class="container">
-  <div class="row">
-      <div class="col-sm-4">
-          <img src="afterabt (1).jpeg" alt="Image 1" class="img-fluid">
-      </div>
-      <div class="col-sm-4">
-          <img src="afterabt (2).jpeg" alt="Image 2" class="img-fluid">
-      </div>
-      <div class="col-sm-4">
-          <img src="afterabt (3).jpeg" alt="Image 3" class="img-fluid" height="200px">
-      </div>
-  </div>
-</div>
+    <div class="parallax1-container" style="background-color: black;">
 
 
 
-<br><br><br><br><div class="unique-container">
-  <div class="unique-left">
-      <div class="unique-video-container">
-          <video controls poster="https://s39613.pcdn.co/wp-content/uploads/2019/06/when-everything-goes-right-in-the-classroom-190612.jpg" class="unique-video">
-              <source src="your-video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-      </div>
-  </div>
-  <div class="unique-right">
-      <h1>Rainbow Peirngathur</h1>
-      <p>Introducing Rainbow Tuition Center's newest wing in Perinathur, where educational excellence takes on a fresh dimension. This state-of-the-art facility represents our ongoing commitment to providing top-notch education to our students. With modern amenities and high-quality classes, we aim to create an inspiring learning atmosphere. At Rainbow Perinathur, we're dedicated to embracing the latest advancements in education and equipping our students with the knowledge and skills they need to excel in today's world. Join us in this exciting new chapter of educational growth and innovation.</p>
-      <a href="https://wa.me/919446777181" class="unique-btn">Learn More</a>
-  </div>
-</div>
-
-<div class="containervid" style="background-color: #ffffff;">
-  <div class="left-side">
-      <h1>Rainbow Iringannur</h1>
-      <p> Rainbow Tuition Center's Iringannur branch, where excellence meets innovation. Our state-of-the-art facility boasts air-conditioned classrooms to provide a comfortable and conducive learning environment. We are committed to delivering high-quality classes, ensuring that our students receive the best education possible. With a strong emphasis on digital technologies, we integrate modern teaching methods to keep pace with the evolving educational landscape. At Rainbow Iringannur, we're not just teaching; we're shaping the future of education.</p>
-      <a href="https://wa.me/919446777181" class="btn2">Learn More</a>
-  </div>
-  <div class="right-side">
-      <div class="video-container">
-          <video controls poster="1 (1).jpeg">
-              <source src="your-video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-      </div>
-  </div>
-</div>
-
-
-<div class="unique-container" style="background-color: #246072;">
-  <div class="unique-left">
-
-       <img src="afterabt (1).jpeg" alt="" height="400px">
-      
-  </div>
-  <div class="unique-right">
-      <h1>Express 60</h1>
-      <p>Medical/Engineering/Civil Service Entrance Examination coaching is mushrooming in the lower classes of northern states of India. But in Kerala, such an effort has not been Carried out in a systematic manner since the beginning. Rainbow is on the path to provide Quality education to students.
-        We are trying to bridge the gap between traditional teaching method in schools and skill based competitive exam requirements by providing coaching in lower classes.</p>
-      <a href="#" class="unique-btn">Learn More</a>
-  </div>
-</div>
-
-<div class="unique-container" style="background-color: #ecffa1;">
-    <div class="unique-left">
-  
-         <img src="https://images.pexels.com/photos/5212335/pexels-photo-5212335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" height="400px" width="300px">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000;">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">STELLXR</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         
+        <div class="parallax-text container text-center text-white">
+            <img src="logo.png" alt="Company Logo" class="img-fluid" style="max-width: 200px;">
+            <p class="mt-4">
+                "We're not just in the business of technology; we're in the business of reimagining the future. Every invention is a step towards a brighter, more innovative world. Innovation is not just our mission; it's our DNA."
+            </p>
+        </div>
     </div>
-    <div class="unique-right">
-        <h1 style="color: black;">Facilitys</h1>
-        <p style="color: black;">
-            At Rainbow Tuition Center, we offer a comprehensive educational experience. Our facilities include Wi-Fi-enabled classrooms, air-conditioned environments, a well-stocked library, and a state-of-the-art sound system. In addition, we provide students with real-world exposure through educational trips and motivation classes to inspire them. Our assessment system consists of series, pre-model, and model examinations, while night classes cater to individual schedules. These facilities are designed to empower students and nurture their academic growth.</p>
-        <a href="facility.html" class="unique-btn" >Learn More</a>
+
+     <div class="parallax2-container">
+        <div class="parallax2-text">
+            <img src="logo.png" alt="Second Logo" class="img-fluid" style="max-width: 100px;">
+<h1 class="mt-3" style="text-align: justify; max-width: 80%;">PIXELOUTFITTER</h1>
+            <p class="mt-3" style="text-align: justify; max-width: 80%;">
+                "Do you have a vision you want to bring to life? Look no further. We specialize in crafting premium posters, logos, websites, apps, games, animations, and more, all at a remarkably low cost, and sometimes even for free. Elevate your product with our creative expertise. Contact us today and let's turn your ideas into reality."
+            </p>
+            <a href="#" class="btn btn-primary btn-lg" style="background-color: transparent; color: #fff; border: 2px solid #fff;">Learn More</a>
+            
+        </div>
+
+
+        
+        
+        <!-- Large image on the right side of the second parallax section -->
+        <img src="pixeloutfitter-removebg-preview.png" alt="Large Image" class="parallax2-image">
     </div>
-  </div>
-<div class="container132">
-
-	<h1 class="heading">Rainbow <span>Image gallery</span></h1>
-
-	<div class="gallery">
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="gal (1).jpeg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="gal (2).jpeg" alt="sunset behind San Francisco city skyline">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="gal (3).jpeg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="gal (4).jpeg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="gal (5).jpeg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="gal (7).jpeg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-		</div>
-
-	</div>
-
-</div>
-<div class="container mt-5 contact">
-  <div class="row">
-      <div class="col-md-4">
-          <!-- Your content here -->
-      </div>
-      <div class="col-md-8 contact-content">
-          <h2>Contact Us</h2>
-          <form id="contactForm" method="post" action="#">
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                  <label for "email">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-      </div>
-  </div>
-</div>
+    
+    </div>
 
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-<br><br><br><br><br><br>
-<footer class="footer-section">
-  <div class="container">
-      <div class="footer-cta pt-5 pb-5">
-          <div class="row">
-              <div class="col-xl-4 col-md-4 mb-30">
-                  <div class="single-cta">
-                      <i class="fas fa-map-marker-alt"></i>
-                      <div class="cta-text">
-                          <h4>Find us</h4>
-                          <span>near panchayath Bus stop, Iringannur, Kerala 673505</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-4 col-md-4 mb-30">
-                  <div class="single-cta">
-                      <i class="fas fa-phone"></i>
-                      <div class="cta-text">
-                          <h4>Call us</h4>
-                          <span>+91 94467 77181</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-4 col-md-4 mb-30">
-                  <div class="single-cta">
-                      <i class="far fa-envelope-open"></i>
-                      <div class="cta-text">
-                          <h4>Mail us</h4>
-                          <span>raibowedupark@gmail.com</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="footer-content pt-5 pb-5">
-          <div class="row">
-              <div class="col-xl-4 col-lg-4 mb-50">
-                  <div class="footer-widget">
-                      <div class="footer-logo">
-                          <a href="index.html"><img src="1468f371-d37d-40cc-acf8-e649ea3d434b-removebg-preview.png" class="img-fluid" alt="logo"></a>
-                      </div>
-                      <div class="footer-text">
-                          <p>Thank you for visiting us we hope you loved our website and come join us and lead your child to a brilliant future</p>
-                      </div>
-                      <div class="footer-social-icon">
-                          <span>Follow us</span>
-                          <a href="https://www.facebook.com/rainbowedupark">Facebook<i class="fab fa-facebook-f facebook-bg"></i></a>
-                          <a href="https://www.instagram.com/rainbowedupark/?hl=en">Instagram<i class="fab fa-twitter twitter-bg"></i></a>
-                          <a href="https://wa.me/919446777181">Whatsapp<i class="fab fa-google-plus-g google-bg"></i></a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                  <div class="footer-widget">
-                      <div class="footer-widget-heading">
-                          <h3>Useful Links</h3>
-                      </div>
-                      <ul>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="abt.html">about</a></li>
-                          <li><a href="facility.html">services</a></li>
-                          <li><a href="express.html">Express60</a></li>
-                        
-                          <li><a href="#" style="color: white;">Credits:</a></li>
-                          <li><a href="c.html">Contact us</a></li>
-                         
-                          <li style="color: white;">Website Designed & developed by Nihal sj <br> <br>
 
-                            all images from Pixel free stock photos
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                  <div class="footer-widget">
-                      <div class="footer-widget-heading">
-                          <h3>Subscribe</h3>
-                      </div>
-                      <div class="footer-text mb-25">
-                          <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                      </div>
-                      <div class="subscribe-form">
-                          <form action="#">
-                              <input type="text" placeholder="Email Address">
-                              <button><i class="fab fa-telegram-plane"></i></button>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="copyright-area" style="background-color: white;">
-      <div class="container">
-          <div class="row">
-              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                  <div class="copyright-text">
-                      <p>Copyright &copy; 2023, All Right Reserved <a href=""><img src="stell.png" alt="" srcset="" height="90px"></a></p>
-                  </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                  <div class="footer-menu">
-                 
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</footer>
+
+    <div class="parallax3-container">
+        <div class="parallax3-text">
+            <img src="logo.png" alt="Second Logo" class="img-fluid" style="max-width: 100px;">
+            <h1 class="mt-3" style="text-align: justify; max-width: 80%;">ASHAN</h1>
+
+            <p class="mt-3" style="text-align: justify; max-width: 80%;">
+                Aashan is an education blog/platform that offers high-quality study materials completely free of charge. With a strong focus on helping students excel in exams and competitions, Aashan provides comprehensive resources to ensure high scores and academic success. Beyond study materials, Aashan also offers weekly quizzes and quiz questions, allowing students to assess their knowledge and track their progress.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg" style="background-color: transparent; color: #fff; border: 2px solid #fff;">Learn More</a>
+            
+        </div>
+
+
+        
+        
+        <!-- Large image on the right side of the second parallax section -->
+       <br><br> <img src="11.jpeg" alt="Large Image" class="parallax3-image">
+    </div>
+    
+    </div>
+
+    <br><footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Stellxr. Unauthorized duplication, copying, and giggles are highly encouraged! lol</p>
+        </div>
+    </footer>
+    
 
     
-<script>
-    // JavaScript to hide the preloader when the page content is loaded
-    document.addEventListener("DOMContentLoaded", function() {
-        var preloader = document.getElementById("preloader");
-        preloader.style.display = "none";
+    <script>
+        // JavaScript to hide the preloader when the page content is loaded
+        document.addEventListener("DOMContentLoaded", function() {
+            var preloader = document.getElementById("preloader");
+            preloader.style.display = "none";
 
-        var mainContent = document.getElementById("main-content");
-        mainContent.style.display = "block"; // Display the main content
-    });
-</script>
+            var mainContent = document.getElementById("main-content");
+            mainContent.style.display = "block"; // Display the main content
+        });
+    </script>
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
